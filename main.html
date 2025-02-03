@@ -1,33 +1,79 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaw's News</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #011e29;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .latest-news, .pictorial-news {
+            width: 25%;
+        }
+        .main-article {
+            width: 40%;
+        }
+        .latest-news ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .latest-news li {
+            padding: 5px 0;
+        }
+        .pictorial-news img {
+            width: 100%;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-	<div class="header">News Portal</div>
+    <div class="header">Shaw's News</div>
     
-    <div class="latest-news-section">
-        <h2>Latest News</h2>
-        <ul>
-            <li>News Item One</li>
-            <li>News Item Two</li>
-            <li>News Item Three</li>
-        </ul>
+    <div class="container">
+        <div class="box latest-news">
+            <h3>Latest News Articles</h3>
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ul>
+        </div>
+        
+        <div class="box main-article">
+            <h3>Main Article</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna eu fringilla malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros.</p>
+        </div>
+        
+        <div class="box pictorial-news">
+            <h3>Pictorial News</h3>
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image One">
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image Two">
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image Three">
+        </div>
     </div>
-    
-    <div class="pictorial-news-section">
-        <h2>Pictorial News</h2>
-        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image One">
-        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image Two">
-        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image Three">
-    </div>
-</html>
-https://www.svgrepo.com/show/345221/three-dots.svg
