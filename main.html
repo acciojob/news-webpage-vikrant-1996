@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaw's News</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header {
+            background-color: #011e29;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .latest-news-section, .pictorial-news-section, .main-article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .latest-news-section {
+            width: 200px;
+        }
+        .main-article {
+            width: 400px;
+        }
+        .pictorial-news-section {
+            width: 200px;
+            text-align: center;
+        }
+        .pictorial-news-section img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="header">Shaw's News</div>
-    
     <div class="container">
-        <div class="box latest-news">
+        <div class="latest-news-section">
             <h3>Latest News Articles</h3>
             <ul>
                 <li>Article 1</li>
@@ -17,19 +56,16 @@
                 <li>Article 3</li>
             </ul>
         </div>
-        
-        <div class="box main-article">
-            <h3>Main Article</h3>
+        <div class="main-article">
+            <h2>Main Article</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna eu fringilla malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros.</p>
         </div>
-        
-        <div class="box pictorial-news">
+        <div class="pictorial-news-section">
             <h3>Pictorial News</h3>
             <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image One">
             <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image Two">
             <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image Three">
         </div>
     </div>
-
 </body>
 </html>
