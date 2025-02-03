@@ -22,14 +22,22 @@
             justify-content: center;
             gap: 20px;
             padding: 20px;
+	
         }
         .latest-news-section, .pictorial-news-section, .main-article {
             background-color: white;
             padding: 20px;
             border-radius: 10px;
+			display:flex;
+			flex-direction:column;
+			align-items:stretch;
+			
+	
         }
         .latest-news-section {
             width: 200px;
+			
+			
         }
         .main-article {
             width: 400px;
@@ -46,7 +54,8 @@
     </style>
 </head>
 <body>
-    <div class="header">Shaw's News</div>
+	<header><div class="header">Shaw's News</div></header>
+    
     <div class="container">
         <div class="latest-news-section">
             <h3>Latest News Articles</h3>
